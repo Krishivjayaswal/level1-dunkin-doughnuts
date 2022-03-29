@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <style>
+            body{
+                text-align:center;
+            }
+            h1{
+    color:red;
+    font-family: "Great Vibes";
+}
+
+
+
+
+body{
+    background:linear-gradient(white,pink,skyblue)
+}
+
+
+
+p{
+    color:red;
+    font-size: 18;
+}
+
+#home{
+
+    position:fixed;
+    bottom:0;
+}
+
+        </style>
+    </head>
+    <body>
+        <h1>Order here </h1>
+        <label for="fname"> first name:</label>
+        <input type="text" id="fname" name="fname">
+        <br><br>
+        <label for="lname"> last name:</label>
+        <input type="text" id="lname" name="lname">
+        <br><br>
+        <label for="number"> contact number:</label>
+        <input type="number" id="number" name="num">
+        <br><br>
+        <label for="address"> adderess:</label>
+        <textarea></textarea>
+        <br><br>
+        <label for="Doughnut">type of doughnut</label>
+        <input type="text" id="doughnut" name="doughnut">
+        <br><br>
+            <input type="checkbox">
+            <label>Glazed</label>
+            <br>
+            <input type="checkbox">
+            <label>Frosted</label>
+            <br>
+            <input type="checkbox">
+            <label>Jelly</label>
+            <br>
+            <input type="checkbox">
+            <label>Cream</label>
+            <br>
+            <input type="checkbox">
+            <label>Powdered</label>
+            <br>
+            <input type="checkbox">
+            <label>Seasoned</label>
+            <br>
+            <button onclick="confirmorder()"> Order </button>
+            <br><br>
+            <a id="home" href="home.html">
+            <img src="https://th.bing.com/th/id/R.29da9f0696e2d2722827b4b86b047039?rik=EMKGWSqDkLXBxw&riu=http%3a%2f%2fwww.newdesignfile.com%2fpostpic%2f2012%2f10%2fhome-button_301455.jpg&ehk=M1C6KIklNrjlyUjbRlqe9RUJc29OP4J5fHy3YRTCNjY%3d&risl=&pid=ImgRaw&r=0" width="100" height="100">
+        </a>
+        <script>
+            function confirmorder(){
+               let order =  confirm('place order ? ');
+               let message = order?"Your Order is places":"Your Order is pending";
+               alert(message);
+            }
+        </script>
+    </body>
+</html>
